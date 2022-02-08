@@ -5,5 +5,6 @@ const Course = require("../models/Course")
 const router = express.Router()
 
 router.route("/").post(courseController.createCourse)
+router.route("/").get(courseController.getAllCourses)
 
 module.exports = router
